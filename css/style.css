@@ -1,0 +1,122 @@
+* {
+    transition: all .1s ease-in;
+}
+
+body {
+    margin: auto;
+    background: black;
+}
+
+.list {
+    margin: 0 15%;
+    background-color: #3E3A3A;
+    height: 100%;
+    border: 20px solid #F3F0F0;
+}
+
+.list_title {
+    text-align: center;
+    color: #F78181;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #5E5C5C;
+    padding: 0.5%;
+    font-size: 1.3em;
+}
+
+h1[title_size] {
+    font: 1.7em sans-serif;
+    font-weight: bold;
+    margin-bottom: auto;
+}
+
+.buys {
+    margin-top: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+    border: none;
+}
+
+.pickle,
+.apple,
+.orange,
+.plate,
+.bento,
+.sake {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    padding: 2.2%;
+    font: 1.7em sans-serif;
+    background-color: #71507A;
+    color: #F8F6F9;
+}
+
+#pickle #apple,
+#orange,
+#plate,
+#bento,
+#sake {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked+label {
+    text-decoration: line-through;
+}
+
+.buys div:nth-child(2n) {
+    background-color: #77558F;
+}
+
+.buys .pickle:hover,
+.buys .apple:hover,
+.buys .orange:hover,
+.buys .plate:hover,
+.buys .bento:hover,
+.buys .sake:hover {
+    border-bottom: 5px solid #fffbfb;
+    border-top: 5px solid #fffbfb;
+    background-color: #3E2843;
+}
+
+.pickle span::after {
+    content: "(for the next lessons about CSS)";
+    font: 0.6em sans-serif;
+    color: #F8F6F9;
+}
+
+.apple span::after {
+    content: "(for more CSS manipulations)";
+    font: 0.6em sans-serif;
+    color: #F8F6F9;
+}
+
+.plate span::after {
+    content: "(hm...they olweys disappear)";
+    font: 0.6em sans-serif;
+    color: #F8F6F9;
+}
+
+.orange span::after {
+    content: "(becouse they awesome)";
+    font: 0.6em sans-serif;
+    color: #F8F6F9;
+}
+
+.sake span::after {
+    content: "(for my frends)";
+    font: 0.6em sans-serif;
+    color: #F8F6F9;
+}
+
+.list footer {
+    margin-left: 15%;
+    margin-left: 15%;
+    width: 73%;
+    height: auto;
+    font: 1.7em sans-serif;
+    background-color: #6B696B;
+    color: #F78181;
+    text-align: center;
+}
